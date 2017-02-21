@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="es.telefonica.talentum.ledapp.MainActivity">
+    tools:context="com.noteapp.ledapp.MainActivity"
+    android:background="#020202"
+    >
 
-    <TextView
+    <ImageButton
+        android:id="@+id/farmacia"
+        android:src="@drawable/farmacía"
+        android:background="#80D625"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="200dp" />
+
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@+id/farmacia"
+        android:columnCount="3"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageButton
+            android:id="@+id/veterinaria"
+            android:src="@drawable/veterinaria"
+            android:scaleType="fitCenter"
+            android:background="#216D97"
+            android:layout_below="@+id/farmacia"
+            android:layout_width="116dp"
+            android:layout_height="125dp"
+            />
+
+        <ImageButton
+            android:id="@+id/gasolinera"
+            android:src="@drawable/gasolinera"
+            android:scaleType="fitCenter"
+            android:background="#662D8E"
+            android:layout_width="116dp"
+            android:layout_height="125dp"
+            />
+
+        <ImageButton
+            android:id="@+id/clinica_ortopedia"
+            android:src="@drawable/ortopedia"
+            android:scaleType="fitCenter"
+            android:background="#EEC10F"
+            android:layout_width="116dp"
+            android:layout_height="125dp"
+            />
+
+        <ImageButton
+            android:id="@+id/parafarmacia"
+            android:src="@drawable/parafarmacia"
+            android:scaleType="fitCenter"
+            android:background="#27A7DE"
+            android:layout_width="116dp"
+            android:layout_height="125dp"
+            />
+
+        <ImageButton
+            android:id="@+id/clinica_dental"
+            android:src="@drawable/clinicadental"
+            android:scaleType="fitCenter"
+            android:background="#006838"
+            android:layout_width="116dp"
+            android:layout_height="125dp"
+            />
+
+        <ImageButton
+            android:id="@+id/medico"
+            android:src="@drawable/medicocorazon"
+            android:background="#BB1E2D"
+            android:scaleType="fitCenter"
+            android:layout_width="116dp"
+            android:layout_height="125dp"
+            />
+
+    </GridLayout>
+
 </RelativeLayout>
