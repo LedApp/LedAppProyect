@@ -18,11 +18,12 @@
         android:src="@drawable/farmacia"
         android:background="#80D625"
         android:layout_centerHorizontal="true"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp" />
 
-    <GridLayout
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/primera_linea"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/farmacia"
         android:columnCount="3"
@@ -34,8 +35,9 @@
             android:scaleType="fitCenter"
             android:background="#216D97"
             android:layout_below="@+id/farmacia"
-            android:layout_width="116dp"
-            android:layout_height="125dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
             />
 
         <ImageButton
@@ -43,8 +45,9 @@
             android:src="@drawable/gasolinera"
             android:scaleType="fitCenter"
             android:background="#662D8E"
-            android:layout_width="116dp"
-            android:layout_height="125dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
             />
 
         <ImageButton
@@ -52,9 +55,18 @@
             android:src="@drawable/ortopedia"
             android:scaleType="fitCenter"
             android:background="#EEC10F"
-            android:layout_width="116dp"
-            android:layout_height="125dp"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_weight="1"
             />
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primera_linea"
+        >
 
         <ImageButton
             android:id="@+id/parafarmacia"
@@ -63,6 +75,7 @@
             android:background="#27A7DE"
             android:layout_width="116dp"
             android:layout_height="125dp"
+            android:layout_weight="1"
             />
 
         <ImageButton
@@ -72,6 +85,7 @@
             android:background="#006838"
             android:layout_width="116dp"
             android:layout_height="125dp"
+            android:layout_weight="1"
             />
 
         <ImageButton
@@ -81,8 +95,9 @@
             android:scaleType="fitCenter"
             android:layout_width="116dp"
             android:layout_height="125dp"
+            android:layout_weight="1"
             />
 
-    </GridLayout>
+    </LinearLayout>
 
     </RelativeLayout>
