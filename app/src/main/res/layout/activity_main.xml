@@ -7,17 +7,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-<<<<<<< HEAD
-<<<<<<< HEAD
-    tools:context="es.telefonica.talentum.ledapp.MainActivity">
-=======
-    tools:context="com.noteapp.ledapp.MainActivity"
-=======
-    tools:context="es.telefonica.talentum.ledapp.MainActivity"
->>>>>>> 07fbd059beeff03d1f306f6e46c0f29e4d2933ce
-    android:background="#020202"
-    >
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <ImageButton
         android:id="@+id/farmacia"
@@ -25,19 +15,14 @@
         android:background="#80D625"
         android:layout_centerHorizontal="true"
         android:layout_width="350dp"
-        android:layout_height="200dp" />
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> 07fbd059beeff03d1f306f6e46c0f29e4d2933ce
+        android:layout_height="200dp"/>
 
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/farmacia"
         android:columnCount="3"
-        android:layout_centerHorizontal="true"
-        >
+        android:layout_centerHorizontal="true">
 
         <ImageButton
             android:id="@+id/veterinaria"
@@ -96,4 +81,4 @@
 
     </GridLayout>
 
-</RelativeLayout>
+    </RelativeLayout>
