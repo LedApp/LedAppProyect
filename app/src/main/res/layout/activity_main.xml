@@ -11,7 +11,7 @@
 
     <ImageButton
         android:id="@+id/farmacia"
-        android:src="@drawable/farmacía"
+        android:src="@drawable/farmacia"
         android:background="#80D625"
         android:layout_centerHorizontal="true"
         android:layout_width="350dp"
