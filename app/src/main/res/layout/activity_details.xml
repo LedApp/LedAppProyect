@@ -25,6 +25,7 @@
             android:textColor="@android:color/black"
             android:layout_alignParentTop="true"
             android:text="Titulo"/>
+
         <TextView
             android:id="@+id/activity_details_referencia"
             app:layout_widthPercent="30%"
@@ -35,6 +36,7 @@
             android:textColor="@android:color/black"
             android:layout_below="@id/activity_details_titulo"
             android:text="referencia"/>
+
         <ImageView
             android:id="@+id/activity_details_imagen"
             app:layout_widthPercent="30%"
