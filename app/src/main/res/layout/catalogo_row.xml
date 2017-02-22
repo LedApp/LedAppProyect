@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/black">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textSize="45dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@android:color/holo_green_dark"/>
-
-    <TextView
-        android:background="@android:color/holo_red_dark"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        tools:text="objeto1"
+        android:id="@+id/catalogo_row__row"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
         android:textSize="45dp"
         android:gravity="center"
         android:textStyle="bold"
@@ -28,29 +18,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:background="@android:color/holo_green_dark"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textSize="45dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:background="@android:color/holo_red_dark"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textSize="45dp"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <ImageView
+        android:id="@+id/catalogo_row__image_row"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cruzledlatina60"
+        android:layout_toRightOf="@+id/catalogo_row__row"/>
 
 
-</LinearLayout>
+</RelativeLayout>
