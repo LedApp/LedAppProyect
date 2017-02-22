@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="95dp"
-    android:background="@android:color/black"
-    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        tools:text="Objeto 1"
-        android:background="@android:color/white"
-        android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:textSize="45dp"
-        android:textStyle="italic"
-=======
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -28,22 +14,17 @@
         android:textSize="45dp"
         android:gravity="center"
         android:textStyle="bold"
->>>>>>> feature/Adapter_and_ViewHolder
         android:textColor="@android:color/black"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-<<<<<<< HEAD
-  
-=======
     <ImageView
         android:id="@+id/catalogo_row__image_row"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/cruzledlatina60"
         android:layout_toRightOf="@+id/catalogo_row__row"/>
->>>>>>> feature/Adapter_and_ViewHolder
 
 
 </RelativeLayout>
