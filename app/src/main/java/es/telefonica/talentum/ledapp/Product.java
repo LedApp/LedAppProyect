@@ -1,37 +1,39 @@
 package es.telefonica.talentum.ledapp;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by gemabeltran on 23/2/17.
  */
 
 public class Product {
 
-    private String url;
-    private String nombre;
-    private String ref;
-    private String descripcion;
-    private String tresd;
-    private String bluetooth;
-    private String fecha;
-    private String cruz;
-    private String horario;
-    private String brillo;
-    private String disponibilidad;
-    private String voltaje;
-    private String consumo;
-    private String almacenamiento;
-    private String trabajo;
-    private String pixeles;
-    private String fuente;
-    private String contol;
-    private String tipografia;
-    private String cpu;
-    private String animacion;
-    private String cantidad;
-    private String ancho;
-    private String alto;
-    private String fondo;
-    private String categoria;
+    @SerializedName("url") private String url;
+    @SerializedName("descripcion_nombre") private String nombre;
+    @SerializedName("ref") private String ref;
+    @SerializedName("descripcion") private String descripcion;
+    @SerializedName("tresd") private String tresd;
+    @SerializedName("bluetooth") private String bluetooth;
+    @SerializedName("fecha") private String fecha;
+    @SerializedName("cruz") private String cruz;
+    @SerializedName("horario") private String horario;
+    @SerializedName("brillo") private String brillo;
+    @SerializedName("disponibilidad") private String disponibilidad;
+    @SerializedName("voltaje") private String voltaje;
+    @SerializedName("consumo") private String consumo;
+    @SerializedName("almacenamiento") private String almacenamiento;
+    @SerializedName("trabajo") private String trabajo;
+    @SerializedName("pixeles") private String pixeles;
+    @SerializedName("fuente") private String fuente;
+    @SerializedName("control") private String contol;
+    @SerializedName("tipofrafia") private String tipografia;
+    @SerializedName("cpu") private String cpu;
+    @SerializedName("animacion") private String animacion;
+    @SerializedName("cantidad") private String cantidad;
+    @SerializedName("ancho") private String ancho;
+    @SerializedName("alto") private String alto;
+    @SerializedName("fondo") private String fondo;
+    @SerializedName("categoria") private String categoria;
 
     public String getUrl() {
         return url;
