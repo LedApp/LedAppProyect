@@ -23,7 +23,7 @@
         android:id="@+id/catalogo_row__image_row"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/cruzledlatina60"
+        tools:src="@drawable/cruzledlatina60"
         android:layout_toRightOf="@+id/catalogo_row__row"/>
 
 
