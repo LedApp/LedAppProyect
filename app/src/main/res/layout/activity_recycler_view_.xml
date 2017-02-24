@@ -4,9 +4,11 @@
     android:id="@+id/activity_recycler_view_"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="es.telefonica.talentum.ledapp.RecyclerView_Activity">
+    tools:context="es.telefonica.talentum.ledapp.RecyclerView_Activity"
+    android:background="@android:color/black">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_recycler_view_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
