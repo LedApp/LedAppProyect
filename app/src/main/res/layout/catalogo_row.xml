@@ -7,6 +7,7 @@
     android:layout_height="100dp"
     android:padding="0dp"
     xmlns:tools="http://schemas.android.com/tools">
+
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
+
     <TextView
         tools:text="objeto1"
         android:id="@+id/catalogo_row__row"
