@@ -1,12 +1,16 @@
 package es.telefonica.talentum.ledapp;
 
+import android.os.Parcel;
+
 import com.google.gson.annotations.SerializedName;
+
+import java.io.Serializable;
 
 /**
  * Created by gemabeltran on 23/2/17.
  */
 
-public class Product {
+public class Product implements Serializable{
 
     @SerializedName("url") private String url;
     @SerializedName("descripcion_nombre") private String nombre;
@@ -34,6 +38,36 @@ public class Product {
     @SerializedName("alto") private String alto;
     @SerializedName("fondo") private String fondo;
     @SerializedName("categoria") private String categoria;
+
+    protected Product(Parcel in) {
+        url = in.readString();
+        nombre = in.readString();
+        ref = in.readString();
+        descripcion = in.readString();
+        tresd = in.readString();
+        bluetooth = in.readString();
+        fecha = in.readString();
+        cruz = in.readString();
+        horario = in.readString();
+        brillo = in.readString();
+        disponibilidad = in.readString();
+        voltaje = in.readString();
+        consumo = in.readString();
+        almacenamiento = in.readString();
+        trabajo = in.readString();
+        pixeles = in.readString();
+        fuente = in.readString();
+        contol = in.readString();
+        tipografia = in.readString();
+        cpu = in.readString();
+        animacion = in.readString();
+        cantidad = in.readString();
+        ancho = in.readString();
+        alto = in.readString();
+        fondo = in.readString();
+        categoria = in.readString();
+    }
+
 
     public String getUrl() {
         return url;
@@ -242,4 +276,5 @@ public class Product {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
+
 }
