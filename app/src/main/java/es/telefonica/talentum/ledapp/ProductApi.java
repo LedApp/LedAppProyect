@@ -21,7 +21,7 @@ import java.util.List;
 
 public class ProductApi {
 
-    public static final String url = "http://demo8112147.mockable.io/";
+    public static final String url = "https://demo8112147.mockable.io/";
 
     public interface ProductDownloadDataFinish{
 
@@ -30,7 +30,11 @@ public class ProductApi {
 
     private ProductDownloadDataFinish listener;
 
-    public void getProduct(Context context, String deckId){
+    public void setOnProductDowloadDataFinish(ProductDownloadDataFinish listener) {
+        this.listener = listener;
+    }
+
+    public void getProduct(Context context){
 
         RequestQueue queue = Volley.newRequestQueue(context);
 
