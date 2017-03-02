@@ -19,14 +19,14 @@ android {
     }
     productFlavors {
         freeFlavour {
-            minSdkVersion 25
+            minSdkVersion 14
             applicationId 'es.telefonica.talentum.ledapp.free'
             targetSdkVersion 25
             versionName 'freeVersion'
             versionCode 1
         }
         eoslabFlavour {
-            minSdkVersion 25
+            minSdkVersion 14
             applicationId 'es.telefonica.talentum.ledapp.eoslab'
             targetSdkVersion 25
             versionCode 1
