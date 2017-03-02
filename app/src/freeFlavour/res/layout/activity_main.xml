@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="es.telefonica.talentum.ledapp.MainActivity"
+    android:background="#020202">
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailsActivity">
+
+
+    <ImageButton
+        android:id="@+id/farmacia"
+        android:src="@drawable/farmacia"
+        android:background="#80D625"
+        android:layout_centerHorizontal="true"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="40%" />
+
+
+        <ImageButton
+            android:id="@+id/veterinaria"
+            android:src="@drawable/veterinaria"
+            android:scaleType="fitCenter"
+            android:background="#216D97"
+            android:layout_below="@+id/farmacia"
+            app:layout_widthPercent="33.3%"
+            app:layout_heightPercent="30%"
+            />
+
+        <ImageButton
+            android:id="@+id/gasolinera"
+            android:src="@drawable/gasolinera"
+            android:scaleType="fitCenter"
+            android:background="#662D8E"
+            android:layout_below="@+id/farmacia"
+            android:layout_toRightOf="@+id/veterinaria"
+            app:layout_widthPercent="33.3%"
+            app:layout_heightPercent="30%"
+            />
+
+        <ImageButton
+            android:id="@+id/clinica_ortopedia"
+            android:src="@drawable/ortopedia"
+            android:scaleType="fitCenter"
+            android:background="#EEC10F"
+            android:layout_below="@+id/farmacia"
+            android:layout_toRightOf="@+id/gasolinera"
+            app:layout_widthPercent="33.3%"
+            app:layout_heightPercent="30%"
+            />
+
+
+        <ImageButton
+            android:id="@+id/clinica_dental"
+            android:src="@drawable/clinicadental"
+            android:scaleType="fitCenter"
+            android:background="#006838"
+            android:layout_below="@+id/gasolinera"
+            android:layout_toRightOf="@+id/medico"
+            app:layout_widthPercent="33.3%"
+            app:layout_heightPercent="30%"
+            />
+
+        <ImageButton
+            android:id="@+id/parafarmacia"
+            android:src="@drawable/parafarmacia"
+            android:scaleType="fitCenter"
+            android:background="#27A7DE"
+            android:layout_below="@+id/clinica_ortopedia"
+            android:layout_alignParentRight="true"
+            app:layout_widthPercent="33.3%"
+            app:layout_heightPercent="30%"
+            />
+
+        <ImageButton
+            android:id="@+id/medico"
+            android:src="@drawable/medicocorazon"
+            android:background="#BB1E2D"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/clinica_ortopedia"
+            app:layout_widthPercent="33.3%"
+            app:layout_heightPercent="30%"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    </RelativeLayout>
