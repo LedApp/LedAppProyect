@@ -26,7 +26,7 @@
 
     <TextView
         android:id="@+id/main_view__name_factory"
-        android:text="Embedded and Optoelectronic Systems Laboratories SL. "
+        android:text="Embedded &amp; Optoelectronic Systems Laboratories SL. "
         android:layout_below="@+id/main_view__icon"
         android:fontFamily="sans-serif-condensed"
         android:textSize="20dp"
