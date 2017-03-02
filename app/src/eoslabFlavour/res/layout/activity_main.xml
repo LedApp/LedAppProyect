@@ -7,17 +7,25 @@
     android:background="#E77E23"
     tools:context="es.telefonica.talentum.ledapp.MainActivity">
 
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailsActivity">
+
     <ImageView
         android:id="@+id/main_view__icon"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
         android:src="@drawable/logo"
-        android:background="#FFFFFF"/>
+        android:background="#FFFFFF"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="30%"
+
+        />
 
     <TextView
         android:id="@+id/main_view__name_factory"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
         android:text="Embedded and Optoelectronic Systems Laboratories SL. "
         android:layout_below="@+id/main_view__icon"
         android:fontFamily="sans-serif-condensed"
@@ -25,6 +33,8 @@
         android:gravity="center"
         android:textColor="#E77E23"
         android:background="#FFFFFF"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="15%"
 
         />
 
@@ -35,21 +45,22 @@
         android:text="(+34) 691494242"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="30dp"
         android:gravity="center"
         android:layout_below="@+id/main_view__web"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="8%"
 
 
         />
     <ImageView
         android:id="@+id/main_view__phone_icon"
         android:layout_width="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_height="35dp"
         android:background="@android:drawable/ic_menu_call"
-        android:layout_marginLeft="90dp"
         android:layout_below="@+id/main_view__web"
+        android:layout_marginLeft="75dp"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="8%"
+
 
         />
 
@@ -60,74 +71,71 @@
         android:text="www.eoslab.com"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
-        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:layout_marginLeft="30dp"
         android:layout_below="@+id/main_view__name_factory"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="8%"
 
         />
     <ImageView
         android:id="@+id/main_view__web_icon"
-        android:layout_width="25dp"
-        android:layout_marginTop="30dp"
-        android:layout_height="25dp"
-        android:layout_marginLeft="60dp"
         android:background="@drawable/mundoimagentransparente"
         android:layout_alignLeft="@+id/main_view__web"
         android:layout_below="@+id/main_view__name_factory"
+        android:layout_marginLeft="75dp"
+        app:layout_widthPercent="8%"
+        app:layout_heightPercent="8%"
 
         />
 
     <TextView
         android:id="@+id/main_view__correo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
         android:text="dpino@eoslab.com"
         android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:layout_marginTop="20dp"
+        android:textSize="19dp"
         android:gravity="center"
         android:layout_below="@+id/main_view__phone"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="8%"
+
 
         />
     <ImageView
         android:id="@+id/main_view__correo_icon"
-        android:layout_width="25dp"
-        android:layout_marginTop="20dp"
-        android:layout_height="25dp"
-        android:layout_marginLeft="50dp"
         android:background="@android:drawable/ic_dialog_email"
         android:layout_alignLeft="@+id/main_view__correo"
         android:layout_below="@+id/main_view__phone"
+        app:layout_widthPercent="7%"
+        app:layout_heightPercent="7%"
+        android:layout_marginLeft="75dp"
         />
 
     <Button
         android:id="@+id/main_view__catalogo"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_below="@+id/main_view__correo"
         android:text="Catálogo"
         android:textColor="#E77E23"
         android:textSize="20dp"
         android:fontFamily="sans-serif-condensed"
         android:background="@drawable/button_catalogo"
+        android:layout_marginTop="15dp"
         android:layout_centerInParent="true"
+        app:layout_widthPercent="85%"
+        app:layout_heightPercent="10%"
         />
 
     <ImageButton
         android:id="@+id/main_view__about_us"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/main_view__catalogo"
         android:textColor="#E77E23"
         android:background="@android:drawable/ic_dialog_info"
         android:layout_centerInParent="true"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="10%"
+        android:layout_marginTop="15dp"
         />
 
-
+    </android.support.percent.PercentRelativeLayout>
 
 
 
