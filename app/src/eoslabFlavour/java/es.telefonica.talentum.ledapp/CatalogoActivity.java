@@ -126,6 +126,8 @@ public class CatalogoActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     public void consultProduct(){
