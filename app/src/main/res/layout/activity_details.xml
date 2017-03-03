@@ -21,7 +21,7 @@
             android:id="@+id/activity_details_titulo"
             app:layout_widthPercent="100%"
             app:layout_heightPercent="10%"
-            android:textSize="50dp"
+            android:textSize="20dp"
             android:gravity="left"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
@@ -70,8 +70,8 @@
             android:text="Especificaciones"
             android:layout_alignParentRight="true"/>
 
-        <TextView
-            android:id="@+id/activity_details_mostrar_caracteristicas_y_especificaciones"
+        <LinearLayout
+            android:id="@+id/caracteristicas"
             app:layout_widthPercent="100%"
             app:layout_heightPercent="70%"
             android:textSize="15dp"
@@ -80,7 +80,115 @@
             android:textStyle="bold"
             android:textColor="@android:color/black"
             android:layout_below="@id/activity_details_especificaciones_button"
-            tools:text="Caracteristicas:"/>
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/details___cruz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="10dp"
+
+                />
+            <TextView
+                android:id="@+id/details___horario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/details___brillo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_marginBottom="10dp"
+                />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/especificaciones"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="70%"
+            android:textSize="15dp"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/activity_details_especificaciones_button"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/details___voltaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="10dp"
+
+                />
+            <TextView
+                android:id="@+id/details___consumo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/details___almacenamiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/details___trabajo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/details___pixeles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/details___fuente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/details___control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:id="@+id/details___tipografia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaaaaaaaa"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+
 
 
 
