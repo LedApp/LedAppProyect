@@ -32,8 +32,14 @@ public class EosLabAdapter extends RecyclerView.Adapter<EosLabViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(EosLabViewHolder holder, int position) {
+    public void onBindViewHolder(final EosLabViewHolder holder, int position) {
         holder.setProduct(productList.get(position), holder.itemView.getContext());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                holder.viewDetails(holder.itemView.getContext());
+            }
+        });
     }
 
     @Override

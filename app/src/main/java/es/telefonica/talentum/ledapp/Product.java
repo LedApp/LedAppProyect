@@ -4,11 +4,13 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
+import io.realm.RealmObject;
+
 /**
  * Created by gemabeltran on 23/2/17.
  */
 
-public class Product implements Serializable{
+public class Product extends RealmObject implements Serializable {
 
     @SerializedName("url") private String url;
     @SerializedName("descripcion_nombre") private String nombre;
@@ -37,6 +39,8 @@ public class Product implements Serializable{
     @SerializedName("fondo") private String fondo;
     @SerializedName("categoria") private String categoria;
 
+    public Product() {
+    }
 
     public String getUrl() {
         return url;

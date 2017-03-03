@@ -6,6 +6,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -20,9 +22,10 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.realm.Realm;
 
 public class CatalogoActivity extends AppCompatActivity {
-
+    private GoogleApiClient client;
 
     @BindView(R.id.farmacia)
     ImageButton farmacia;
@@ -46,7 +49,7 @@ public class CatalogoActivity extends AppCompatActivity {
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
-    private GoogleApiClient client;
+
 
 
     @Override
@@ -54,27 +57,15 @@ public class CatalogoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.catalogo_main);
         ButterKnife.bind(this);
+        Realm.init(this);
 
-        //Flovours
-
-        if (Constants.type == Constants.Type.FREE) {
-            Log.i("TAG", "Free version");
-
-        } else {
-
-            Log.i("TAG", "EOSLAB version");
-
-        }
-
-
-        consultProduct();
 
         farmacia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getFarmacia();
+
                 Intent i = new Intent(CatalogoActivity.this, RecyclerView_Activity.class);
-                i.putExtra("productList", (Serializable) productListFinal);
+                i.putExtra("categoria", "farmacia");
                 startActivity(i);
             }
         });
@@ -82,9 +73,8 @@ public class CatalogoActivity extends AppCompatActivity {
         veterinaria.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getVeterinarias();
                 Intent i = new Intent(CatalogoActivity.this, RecyclerView_Activity.class);
-                i.putExtra("productList", (Serializable) productListFinal);
+                i.putExtra("categoria", "veterinaria");
                 startActivity(i);
             }
         });
@@ -100,9 +90,9 @@ public class CatalogoActivity extends AppCompatActivity {
         ortopedia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getOrtopedia();
+
                 Intent i = new Intent(CatalogoActivity.this, RecyclerView_Activity.class);
-                i.putExtra("productList", (Serializable) productListFinal);
+                i.putExtra("categoria", "ortopedia");
                 startActivity(i);
             }
         });
@@ -110,9 +100,9 @@ public class CatalogoActivity extends AppCompatActivity {
         parafarmicia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getParafarmacia();
+
                 Intent i = new Intent(CatalogoActivity.this, RecyclerView_Activity.class);
-                i.putExtra("productList", (Serializable) productListFinal);
+                i.putExtra("categoria", "parafarmacia");
                 startActivity(i);
             }
         });
@@ -120,9 +110,9 @@ public class CatalogoActivity extends AppCompatActivity {
         clinicaDental.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getDentista();
+
                 Intent i = new Intent(CatalogoActivity.this, RecyclerView_Activity.class);
-                i.putExtra("productList", (Serializable) productListFinal);
+                i.putExtra("categoria", "dentista");
                 startActivity(i);
             }
         });
@@ -130,19 +120,15 @@ public class CatalogoActivity extends AppCompatActivity {
         medico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getMedico();
+
                 Intent i = new Intent(CatalogoActivity.this, RecyclerView_Activity.class);
-                i.putExtra("productList", (Serializable) productListFinal);
+                i.putExtra("categoria", "medico");
                 startActivity(i);
             }
         });
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-
-    public void consultProduct() {
+    public void consultProduct(){
         final ProductApi productApi = new ProductApi();
 
         productApi.getProduct(this);
@@ -153,74 +139,44 @@ public class CatalogoActivity extends AppCompatActivity {
 
                 productList = productListApi;
 
+                Realm realm = Realm.getDefaultInstance();
+
+                realm.beginTransaction();
+                realm.delete(Product.class);
+                for (Product p:productList) {
+
+                    Log.d("nameee", p.getCategoria());
+                    realm.copyToRealm(p);
+
+                }
+
+                realm.commitTransaction();
+
+
             }
         });
     }
 
-    public void getFarmacia() {
-        productListFinal = new LinkedList<>();
-        for (Product p : productList) {
-            if (p.getCategoria().equals("farmacia")) {
-                productListFinal.add(p);
-            }
-
-        }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
 
-    public void getVeterinarias() {
-        productListFinal = new LinkedList<>();
-        for (Product p : productList) {
-            if (p.getCategoria().equals("veterinario")) {
-                productListFinal.add(p);
-            }
+        if (id == R.id.menu_main_refresh) {
 
+            consultProduct();
+
+            return true;
         }
 
-    }
 
-    public void getOrtopedia() {
-        productListFinal = new LinkedList<>();
-        for (Product p : productList) {
-            if (p.getCategoria().equals("ortopedia")) {
-                productListFinal.add(p);
-            }
 
-        }
 
-    }
-
-    public void getParafarmacia() {
-        productListFinal = new LinkedList<>();
-        for (Product p : productList) {
-            if (p.getCategoria().equals("parafarmacia")) {
-                productListFinal.add(p);
-            }
-
-        }
-
-    }
-
-    public void getDentista() {
-        productListFinal = new LinkedList<>();
-        for (Product p : productList) {
-            if (p.getCategoria().equals("dentista")) {
-                productListFinal.add(p);
-            }
-
-        }
-
-    }
-
-    public void getMedico() {
-        productListFinal = new LinkedList<>();
-        for (Product p : productList) {
-            if (p.getCategoria().equals("médico")) {
-                productListFinal.add(p);
-            }
-
-        }
-
+        return super.onOptionsItemSelected(item);
     }
 
 
