@@ -71,8 +71,9 @@ public class MainActivity extends AppCompatActivity {
             correo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Uri uri = Uri.parse("https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier");
-                    Intent intent = new Intent (Intent.ACTION_VIEW, uri);
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    Uri data = Uri.parse("mailto:dpino@eoslab.com?subject=Asunto:" + "" + "&body=" + "");
+                    intent.setData(data);
                     startActivity(intent);
                 }
             });
