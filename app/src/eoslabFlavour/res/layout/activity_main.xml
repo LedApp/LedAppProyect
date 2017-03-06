@@ -124,16 +124,7 @@
         app:layout_heightPercent="10%"
         />
 
-    <ImageButton
-        android:id="@+id/main_view__about_us"
-        android:layout_below="@+id/main_view__catalogo"
-        android:textColor="#E77E23"
-        android:background="@android:drawable/ic_dialog_info"
-        android:layout_centerInParent="true"
-        app:layout_widthPercent="10%"
-        app:layout_heightPercent="8%"
-        android:layout_marginTop="15dp"
-        />
+
 
     </android.support.percent.PercentRelativeLayout>
 
