@@ -2,5 +2,12 @@
 <resources>
     <color name="colorPrimary">#E77E23</color>
     <color name="colorPrimaryDark">#c43b11</color>
-    <color name="colorAccent">#c4927d</color>
+    <color name="farmaciaColor">#80D625</color>
+    <color name="veterinarioColor">#216D97</color>
+    <color name="gasolineraColor">#662D8E</color>
+    <color name="ortopediaColor">#EEC10F</color>
+    <color name="medicoColor">#BB1E2D</color>
+    <color name="dentalColor">#006838</color>
+    <color name="parafarmaciaColor">#27A7DE</color>
+
 </resources>
