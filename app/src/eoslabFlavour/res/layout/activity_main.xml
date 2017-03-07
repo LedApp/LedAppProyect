@@ -45,6 +45,8 @@
         android:text="(+34) 691494242"
         android:textColor="@drawable/text_color"
         android:textSize="20dp"
+        android:layout_marginTop="15dp"
+
         android:gravity="center"
         android:layout_below="@+id/main_view__web"
         app:layout_widthPercent="100%"
@@ -58,31 +60,20 @@
         android:background="@android:drawable/ic_menu_call"
         android:layout_below="@+id/main_view__web"
         android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp"
         app:layout_widthPercent="8%"
         app:layout_heightPercent="8%"
 
 
         />
 
-    <TextView
-        android:id="@+id/main_view__web"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="www.eoslab.com"
-        android:textColor="@drawable/text_color"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:layout_below="@+id/main_view__name_factory"
-        app:layout_widthPercent="100%"
-        app:layout_heightPercent="8%"
-
-        />
-    <ImageView
+        <ImageView
         android:id="@+id/main_view__web_icon"
         android:background="@drawable/mundoimagentransparente"
         android:layout_alignLeft="@+id/main_view__web"
         android:layout_below="@+id/main_view__name_factory"
         android:layout_marginLeft="75dp"
+            android:layout_marginTop="30dp"
         app:layout_widthPercent="8%"
         app:layout_heightPercent="8%"
 
@@ -93,6 +84,7 @@
         android:text="dpino@eoslab.com"
         android:textColor="@drawable/text_color"
         android:textSize="19dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:layout_below="@+id/main_view__phone"
         app:layout_widthPercent="100%"
@@ -100,11 +92,13 @@
 
 
         />
+
     <ImageView
         android:id="@+id/main_view__correo_icon"
         android:background="@android:drawable/ic_dialog_email"
         android:layout_alignLeft="@+id/main_view__correo"
         android:layout_below="@+id/main_view__phone"
+        android:layout_marginTop="20dp"
         app:layout_widthPercent="7%"
         app:layout_heightPercent="7%"
         android:layout_marginLeft="75dp"
@@ -118,12 +112,27 @@
         android:textSize="20dp"
         android:fontFamily="sans-serif-condensed"
         android:background="@drawable/button_catalogo"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="22dp"
         android:layout_centerInParent="true"
         app:layout_widthPercent="85%"
         app:layout_heightPercent="10%"
         />
 
+        <TextView
+            android:id="@+id/main_view__web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="www.eoslab.com"
+            android:textColor="@drawable/text_color"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="8%"
+
+            android:layout_below="@+id/main_view__name_factory"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
 
     </android.support.percent.PercentRelativeLayout>
