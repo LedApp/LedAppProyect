@@ -86,9 +86,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-<<<<<<< HEAD
-    }
-=======
+
+
             correo.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -98,7 +97,9 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
->>>>>>> 5e81a6f27c0cf7903eb08d31282aa92c2d041103
+    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
