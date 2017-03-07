@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#E77E23">
 
     <android.support.percent.PercentRelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,35 +12,29 @@
         android:layout_height="match_parent"
         tools:context=".DetailsActivity">
 
+
     <TextView
         android:id="@+id/developers"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Componentes del equipo LedApp:"
         android:gravity="center"
+        android:textColor="@android:color/white"
         android:fontFamily="sans-serif-condensed"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
-        android:textSize="20dp"
+        android:textSize="25dp"
 
         />
 
 
         <TextView
-            android:id="@+id/artacho"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="Artacho Durán, José"
-            android:layout_below="@+id/developers"
-            android:gravity="center_vertical"
-            android:layout_marginLeft="30dp"
-            />
-        <TextView
             android:id="@+id/cazalla"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:textSize="18dp"
             android:text="Cazalla Ureña, Antonio"
-
+            android:textColor="@drawable/text_color"
             android:layout_below="@+id/artacho"
             android:gravity="center_vertical"
             android:layout_marginLeft="30dp"
@@ -47,18 +42,22 @@
         <TextView
             android:id="@+id/david"
             android:layout_width="match_parent"
+            android:textSize="18dp"
             android:layout_height="40dp"
             android:text="Delgado Gil, David"
             android:layout_below="@+id/cazalla"
             android:gravity="center_vertical"
+            android:textColor="@drawable/text_color"
             android:layout_marginLeft="30dp"
             />
         <TextView
             android:id="@+id/ruben"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Martín Querido, Rubén"
+            android:text="Marín Querido, Rubén"
+            android:textSize="18dp"
             android:layout_below="@+id/david"
+            android:textColor="@drawable/text_color"
             android:gravity="center_vertical"
             android:layout_marginLeft="30dp"
             />
@@ -67,29 +66,46 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:text="Reina Carmona, Mirian"
+            android:textSize="18dp"
             android:layout_below="@+id/ruben"
             android:gravity="center_vertical"
+            android:textColor="@drawable/text_color"
             android:layout_marginLeft="30dp"
             />
         <TextView
             android:id="@+id/emi"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:textSize="18dp"
             android:text="Riera Peréz de Navarro, Emilio"
             android:layout_below="@+id/mirian"
             android:gravity="center_vertical"
+            android:textColor="@drawable/text_color"
             android:layout_marginLeft="30dp"
             />
         <TextView
             android:id="@+id/raul"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:textSize="18dp"
             android:text="Valencia Casado, F.Raul"
             android:layout_below="@+id/emi"
             android:gravity="center_vertical"
+            android:textColor="@drawable/text_color"
             android:layout_marginLeft="30dp"
             />
 
+        <TextView
+            android:id="@+id/artacho"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="18dp"
+            android:textColor="@drawable/text_color"
+            android:text="Artacho Durán, José"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/developers"
+            />
 
 
     </android.support.percent.PercentRelativeLayout>
