@@ -41,7 +41,7 @@
 
     <ImageButton
         android:id="@+id/gasolinera"
-        android:src="@drawable/gasolinera"
+        android:src="@drawable/gasolinera_comingsoon"
         android:scaleType="fitCenter"
         android:background="#662D8E"
         android:layout_below="@+id/farmacia"

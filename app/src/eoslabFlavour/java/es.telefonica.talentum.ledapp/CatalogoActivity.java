@@ -4,6 +4,7 @@ package es.telefonica.talentum.ledapp;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -60,6 +61,7 @@ public class CatalogoActivity extends AppCompatActivity {
         Realm.init(this);
 
 
+
         farmacia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,6 +86,11 @@ public class CatalogoActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(CatalogoActivity.this, RecyclerView_Activity.class);
                 i.putExtra("productList", (Serializable) productListFinal);
+
+                String snackBarText = "Sección disponible próximamente...";
+                View rootView = findViewById(android.R.id.content);
+                Snackbar mySnackBar = Snackbar.make(rootView, snackBarText, Snackbar.LENGTH_LONG);
+                mySnackBar.show();
             }
         });
 
