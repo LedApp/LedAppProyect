@@ -1,6 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailsActivity">
+
+    <TextView
+        android:id="@+id/developers"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Componentes del equipo LedApp:"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+
+        />
+
+
+        <TextView
+            android:id="@+id/artacho"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Artacho Durán, José"
+            android:layout_below="@+id/developers"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/cazalla"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Cazalla Ureña, Antonio"
+
+            android:layout_below="@+id/artacho"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/david"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Delgado Gil, David"
+            android:layout_below="@+id/cazalla"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/ruben"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Martín Querido, Rubén"
+            android:layout_below="@+id/david"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/mirian"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Reina Carmona, Mirian"
+            android:layout_below="@+id/ruben"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/emi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Riera Peréz de Navarro, Emilio"
+            android:layout_below="@+id/mirian"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/raul"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Valencia Casado, F.Raul"
+            android:layout_below="@+id/emi"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            />
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</RelativeLayout>
