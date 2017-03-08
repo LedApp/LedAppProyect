@@ -2,10 +2,12 @@
 
 This application is designed to be used in mobile phones or tablets. It allows the user to consult EOSLAB catalog where it is possible to select from different categories the product. This app shows the user all the features as well as  the specifications of the product selected. 
 
-![Imagen 1][1]   ![Imagen 2][2]
+![Imagen 1][1]   ![Imagen 2][2]    ![Imagen 3][3]
 
-[1]: imagenes/phone1.png
-[2]: imagenes/phone2.png
+[1]: phone1.png
+[2]: phone2.png
+[3]: phone3.png
+
 
 
 
