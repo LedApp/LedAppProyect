@@ -57,6 +57,7 @@
             app:layout_widthPercent="50%"
             app:layout_heightPercent="10%"
             android:layout_below="@id/activity_details_imagen"
+            android:background="@drawable/button_selector"
             android:layout_marginTop="20dp"
             android:text="Caracteristicas"
             android:layout_alignParentLeft="true"/>
@@ -66,6 +67,7 @@
             app:layout_widthPercent="50%"
             app:layout_heightPercent="10%"
             android:layout_below="@id/activity_details_imagen"
+            android:background="@drawable/button_selector"
             android:layout_marginTop="20dp"
             android:text="Especificaciones"
             android:layout_alignParentRight="true"/>

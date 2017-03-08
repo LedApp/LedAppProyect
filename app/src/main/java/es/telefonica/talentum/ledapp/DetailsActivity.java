@@ -81,6 +81,8 @@ public class DetailsActivity extends AppCompatActivity {
                 especificaciones.setAnimation(animation);
                 especificaciones.animate();
                 animation.start();
+                especificacionesButton.setSelected(true);
+                caracteristcasButton.setSelected(false);
             }
         });
 
@@ -94,6 +96,8 @@ public class DetailsActivity extends AppCompatActivity {
                 caracteristicas.setAnimation(animation);
                 caracteristicas.animate();
                 animation.start();
+                especificacionesButton.setSelected(false);
+                caracteristcasButton.setSelected(true);
             }
         });
 
