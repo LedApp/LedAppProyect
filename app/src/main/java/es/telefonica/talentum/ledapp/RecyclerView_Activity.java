@@ -69,8 +69,6 @@ public class RecyclerView_Activity extends AppCompatActivity {
         if (productListFinal != null){
             recyclerView.setAdapter(adapter);
         }
-
-
     }
 
     public void getFarmacia(){

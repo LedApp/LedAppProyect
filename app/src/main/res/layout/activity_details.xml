@@ -134,6 +134,7 @@
                 android:id="@+id/details___voltaje"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="aaaaaaaaaaaaa"
                 android:layout_columnWeight="1"
                 android:layout_marginBottom="10dp"
@@ -143,6 +144,7 @@
                 android:id="@+id/details___consumo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="aaaaaaaaaaaaa"
                 android:layout_marginBottom="10dp"
                 />
@@ -150,6 +152,7 @@
                 android:id="@+id/details___almacenamiento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="aaaaaaaaaaaaa"
                 android:layout_marginBottom="10dp"
                 />
@@ -157,6 +160,7 @@
                 android:id="@+id/details___trabajo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="aaaaaaaaaaaaa"
                 android:layout_marginBottom="10dp"
                 />
@@ -164,6 +168,7 @@
                 android:id="@+id/details___pixeles"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="aaaaaaaaaaaaa"
                 android:layout_marginBottom="10dp"
                 />
@@ -171,6 +176,7 @@
                 android:id="@+id/details___fuente"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="aaaaaaaaaaaaa"
                 android:layout_marginBottom="10dp"
                 />
@@ -178,6 +184,7 @@
                 android:id="@+id/details___control"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="aaaaaaaaaaaaa"
                 android:layout_marginBottom="10dp"
                 />
@@ -185,6 +192,7 @@
                 android:id="@+id/details___tipografia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="aaaaaaaaaaaaa"
                 android:layout_marginBottom="10dp"
                 />

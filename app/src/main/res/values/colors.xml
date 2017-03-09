@@ -11,9 +11,8 @@
     <color name="dentalColor">#006838</color>
     <color name="parafarmaciaColor">#27A7DE</color>
     <color name="colorAccent">#b4dcf6</color>
-    <color name="standar_selected_button">#e5e77e23</color>
+    <color name="standar_selected_button">#94f184</color>
     <color name="standar_button">#f4f4f4</color>
-
 
 </resources>
 

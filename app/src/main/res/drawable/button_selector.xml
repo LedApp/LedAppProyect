@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/standar_selected_button"
+    <item android:drawable="@drawable/button_redondead_selected"
         android:state_pressed="true" />
-    <item android:drawable="@color/standar_selected_button"
+    <item android:drawable="@drawable/button_redondead_selected"
         android:state_selected="true" />
-    <item android:drawable="@color/standar_button" />
+    <item android:drawable="@drawable/button_redondead_standar" />
+
 </selector>
