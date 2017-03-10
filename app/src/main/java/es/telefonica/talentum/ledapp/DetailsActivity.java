@@ -38,6 +38,7 @@ public class DetailsActivity extends AppCompatActivity {
     @BindView(R.id.activity_details_especificaciones_button) Button especificacionesButton;
     @BindView(R.id.caracteristicas) LinearLayout caracteristicas;
     @BindView(R.id.especificaciones) LinearLayout especificaciones;
+    @BindView(R.id.details___buttontresd) ImageView button_3d;
 
 
     @Override
@@ -98,6 +99,13 @@ public class DetailsActivity extends AppCompatActivity {
                 animation.start();
                 especificacionesButton.setSelected(false);
                 caracteristcasButton.setSelected(true);
+            }
+        });
+
+        button_3d.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 

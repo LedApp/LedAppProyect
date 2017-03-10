@@ -6,9 +6,6 @@ import java.io.Serializable;
 
 import io.realm.RealmObject;
 
-/**
- * Created by gemabeltran on 23/2/17.
- */
 
 public class Product extends RealmObject implements Serializable {
 
