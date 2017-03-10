@@ -105,7 +105,8 @@ public class DetailsActivity extends AppCompatActivity {
         button_3d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(v.getContext(), ViewerTresDActivity.class);
+                startActivity(intent);
             }
         });
 
