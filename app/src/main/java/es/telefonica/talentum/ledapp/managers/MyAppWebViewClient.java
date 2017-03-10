@@ -10,7 +10,7 @@ public class MyAppWebViewClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        if(Uri.parse(url).getHost().endsWith("google.com")){
+        if(Uri.parse(url).getHost().endsWith("sketchfab.com")){
             return false;
         }
 
@@ -18,6 +18,4 @@ public class MyAppWebViewClient extends WebViewClient {
         view.getContext().startActivity(intent);
         return true;
     }
-
-
 }
