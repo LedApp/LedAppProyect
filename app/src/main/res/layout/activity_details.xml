@@ -205,6 +205,17 @@
 
         </LinearLayout>
 
+<<<<<<< HEAD
+=======
+        <ImageView
+            android:background="#ffe0b0"
+            android:id="@+id/details___buttontresd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/buttontresd" />
+
+>>>>>>> feature/viewer_3d
     </android.support.percent.PercentRelativeLayout>
 
 </RelativeLayout>
