@@ -21,7 +21,7 @@ import java.util.List;
 
 public class ProductApi {
 
-    public static final String url = "https://demo8112147.mockable.io/";
+    public static final String url = "http://192.168.31.14:8080/eoslab1/JSON";
 
     public interface ProductDownloadDataFinish{
 

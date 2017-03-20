@@ -156,7 +156,7 @@ public class CatalogoActivity extends AppCompatActivity {
                 realm.delete(Product.class);
                 for (Product p:productList) {
 
-                    Log.d("nameee", p.getCategoria());
+                    Log.d("nameee", ""+p.getCategoria());
                     realm.copyToRealm(p);
 
                 }

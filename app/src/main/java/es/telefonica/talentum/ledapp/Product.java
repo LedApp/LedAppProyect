@@ -34,7 +34,7 @@ public class Product extends RealmObject implements Serializable {
     @SerializedName("ancho") private String ancho;
     @SerializedName("alto") private String alto;
     @SerializedName("fondo") private String fondo;
-    @SerializedName("categoria") private String categoria;
+    @SerializedName("id_categorias") private int categoria;
 
     public Product() {
     }
@@ -239,11 +239,11 @@ public class Product extends RealmObject implements Serializable {
         this.fondo = fondo;
     }
 
-    public String getCategoria() {
+    public int getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(int categoria) {
         this.categoria = categoria;
     }
 

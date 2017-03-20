@@ -75,7 +75,7 @@ public class RecyclerView_Activity extends AppCompatActivity {
         productListFinal = new LinkedList<>();
 
         Realm realm = Realm.getDefaultInstance();
-        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", "farmacia").findAll();
+        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", 1).findAll();
         productListFinal = products;
 
     }
@@ -83,7 +83,7 @@ public class RecyclerView_Activity extends AppCompatActivity {
         productListFinal = new LinkedList<>();
 
         Realm realm = Realm.getDefaultInstance();
-        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", "veterinario").findAll();
+        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", 2).findAll();
         productListFinal = products;
 
     }
@@ -92,7 +92,7 @@ public class RecyclerView_Activity extends AppCompatActivity {
         productListFinal = new LinkedList<>();
 
         Realm realm = Realm.getDefaultInstance();
-        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", "ortopedia").findAll();
+        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", 4).findAll();
         productListFinal = products;
 
     }
@@ -101,7 +101,7 @@ public class RecyclerView_Activity extends AppCompatActivity {
         productListFinal = new LinkedList<>();
 
         Realm realm = Realm.getDefaultInstance();
-        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", "parafarmacia").findAll();
+        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", 5).findAll();
         productListFinal = products;
 
     }
@@ -110,7 +110,7 @@ public class RecyclerView_Activity extends AppCompatActivity {
         productListFinal = new LinkedList<>();
 
         Realm realm = Realm.getDefaultInstance();
-        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", "dentista").findAll();
+        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", 6).findAll();
         productListFinal = products;
 
     }
@@ -119,7 +119,7 @@ public class RecyclerView_Activity extends AppCompatActivity {
         productListFinal = new LinkedList<>();
 
         Realm realm = Realm.getDefaultInstance();
-        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", "médico").findAll();
+        RealmResults<Product> products = realm.where(Product.class).equalTo("categoria", 7).findAll();
         productListFinal = products;
     }
 }
